@@ -1,11 +1,14 @@
+
 type screenWidthTypes = {
-    mobile:string;
+    mobile:string
     desktop:string;
-    tablete:string;
+    tabletes:string;
 }
 
-export const screenWidth : screenWidthTypes = {
+const screenWidth :screenWidthTypes=  {
     mobile:"640px",
+    tabletes:"800px",
     desktop:"1020px",
-    tablete:"870px",
 }
+
+export default screenWidth
