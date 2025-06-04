@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Container = () => {
-  return (
-    <div>Container</div>
-  )
+type ContainerProps = {
+    children: ReactNode;
+}
+
+const Container = ({ children }: ContainerProps) => {
+    
+    return (
+        <div>
+            {children}
+        </div>
+    )
 }
 
 export default Container
