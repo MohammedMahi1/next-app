@@ -20,7 +20,7 @@ export default function Home() {
   console.log(typeof xb);
 
   return (
-    <Container variant="center">
+    <Container variant="Right">
       <h1>Hello Next</h1>
       <Button onClick={() => setIsOpen(!isOpen)}
         ref={inputRef}

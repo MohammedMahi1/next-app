@@ -1,5 +1,6 @@
 
 
+import { cn } from '@/lib/cn';
 import { cva, VariantProps } from 'class-variance-authority';
 import React, { ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge';
@@ -19,23 +20,25 @@ const variants = cva(
         'min-lg:px-100',
         'transition-[3s]',
         'flex',
-        'h-svh',
+        'flex-col',
+        'h-[100vh]',
         'w-[100vw]'
     ],
     {
         variants:{
             variant:{
                 center:['items-center justify-center'],
-                centerLeft:[]
+                centerLeft:['items-start justify-center'],
+                centerRight:['items-end justify-center'],
+                Left:['items-start justify-start'],
+                Right:['items-end justify-start'],
             }
         }
     }
 )
 const Container = ({variant, children, className, ...props }: ContainerProps) => {
-
-
     return (
-        <div className={twMerge(variant, className)} {...props}>
+        <div className={cn(variants({variant, className}))} {...props}>
             {children}
         </div>
     )
