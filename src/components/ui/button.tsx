@@ -8,7 +8,7 @@ type ButtonProps = {
 const Button = ({ children, className, ...props }: ButtonProps) => {
     return (
         <button
-            className={twMerge("outline-none w-fit px-8 py-4 bg-black rounded-xl text-white cursor-pointer", className)}
+            className={twMerge("outline-none w-fit px-8 py-4 bg-black rounded-xl border-gray-500 border-2 text-white cursor-pointer", className)}
             {...props}>
                 {children}
             </button>
