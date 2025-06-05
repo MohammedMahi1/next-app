@@ -38,8 +38,8 @@ export default function Home() {
           }}
           animate={
             isOpen ? {
-              width: "19999px",
-              height: "1999px",
+              width: "3000px",
+              height: "3000px",
             } : {
               width: 10,
               height: 10,
