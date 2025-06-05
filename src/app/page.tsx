@@ -20,15 +20,12 @@ export default function Home() {
   console.log(typeof xb);
 
   return (
-    <Container variant="Right">
-      <h1>Hello Next</h1>
+    <Container variant="center">
       <Button onClick={() => setIsOpen(!isOpen)}
         ref={inputRef}
         >
         Dark
       </Button>
-          <motion.div>
-      </motion.div>
     </Container >
   );
 }

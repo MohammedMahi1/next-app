@@ -30,8 +30,8 @@ const variants = cva(
                 center:['items-center justify-center'],
                 centerLeft:['items-start justify-center'],
                 centerRight:['items-end justify-center'],
-                Left:['items-start justify-start'],
-                Right:['items-end justify-start'],
+                left:['items-start justify-start'],
+                right:['items-end justify-start'],
             }
         }
     }
