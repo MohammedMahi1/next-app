@@ -20,37 +20,15 @@ export default function Home() {
   console.log(typeof xb);
 
   return (
-    <div>
-
-    <Container>
+    <Container variant="center">
       <h1>Hello Next</h1>
       <Button onClick={() => setIsOpen(!isOpen)}
         ref={inputRef}
         >
         Dark
       </Button>
-
-    </Container >
-          <motion.div
-        className={twMerge(`absolute top-[${yb}px] left-[${xb}px] bg-black rounded-[9999999px] flex items-center justify-center`,xb === undefined  || yb === undefined ?  "hidden":"")}
-        initial={{
-          width: 10,
-          height: 10,
-          top: yb + "px",
-          left: xb + "px"
-        }}
-        animate={
-          isOpen ? {
-            width: "3000px",
-            height: "3000px",
-          } : {
-            width: 10,
-            height: 10,
-          }
-        }
-        transition={{ duration: .3 }}
-      >
+          <motion.div>
       </motion.div>
-        </div>
+    </Container >
   );
 }
